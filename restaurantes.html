@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodízios de Pizza - Zona Norte de Natal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf6e3;
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #d35400;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background-color: #ffe4b2;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        li:hover {
+            background-color: #ffd699;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff3e0;
+            border-left: 5px solid #d35400;
+            border-radius: 5px;
+        }
+        a {
+            color: #d35400;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Rodízios de Pizza - Zona Norte de Natal</h1>
+
+<ul>
+    <li onclick="toggleInfo('info1')">Caipira Rodízios Pizzas e Massas Zona Norte
+        <div id="info1" class="info">
+            Endereço: Rua Itaboraí, 73 – Potengi, Natal/RN<br>
+            Horário: Todos os dias, das 18h às 23h30<br>
+            Destaques: Rodízio de pizzas e massas com espaço kids<br>
+            Contato: (84) 99842-4416 (WhatsApp)<br>
+            Instagram: <a href="https://www.instagram.com/caipirapizzasemassas/" target="_blank">@caipirapizzasemassas</a>
+        </div>
+    </li>
+
+    <li onclick="toggleInfo('info2')">Bonna Pizzaria
+        <div id="info2" class="info">
+            Endereço: Avenida Senhor do Bonfim, lateral do Norte Shopping – Zona Norte, Natal/RN<br>
+            Horário: Rodízio inclui massas, batata frita e outras opções<br>
+            Observação: Recomendado por moradores locais
+        </div>
+    </li>
+
+    <li onclick="toggleInfo('info3')">Amarelinho Pizzas
+        <div id="info3" class="info">
+            Endereço: Avenida Senhor do Bonfim – Zona Norte, Natal/RN<br>
+            Observação: Recomendado por moradores locais
+        </div>
+    </li>
+
+    <li onclick="toggleInfo('info4')">Benvenuto Pizzaria
+        <div id="info4" class="info">
+            Endereço: Avenida Maranguape, 877 – Zona Norte, Natal/RN<br>
+            Horário: Todos os dias, das 18h às 23h30<br>
+            Destaques: Rodízio completo com pizzas, massas, parmegianas, batata frita, açaí e cremes<br>
+            Contato: (84) 2020-4328 / (84) 99617-9848<br>
+            Instagram: <a href="https://www.instagram.com/benvenutonatal/" target="_blank">@benvenutonatal</a>
+        </div>
+    </li>
+
+    <li onclick="toggleInfo('info5')">Delícias Burgers e Rodízio de Pizzas
+        <div id="info5" class="info">
+            Endereço: Potengi, Natal/RN<br>
+            Horário: Terça a domingo, das 18h às 23h30<br>
+            Destaques: Rodízio de pizzas com ambiente familiar<br>
+            Observação: Bem avaliado na região
+        </div>
+    </li>
+</ul>
+
+<script>
+    function toggleInfo(id) {
+        const infoDiv = document.getElementById(id);
+        infoDiv.style.display = infoDiv.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>
